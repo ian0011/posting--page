@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posting Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <section class="post-creator">
+            <h2>Criar novo post</h2>
+            <form id="post-form">
+                <div class="input-group">
+                    <label for="titulo-input">Título da Postagem</label>
+                    <input type="text" id="titulo-input" required aria-label="Digite o título"
+                        placeholder="Sobre o que você quer falar?">
+                </div>
+
+                <div class="input-group">
+                    <label for="conteudo-input">Conteúdo</label>
+                    <textarea id="conteudo-input" rows="4" required aria-label="Digite o conteúdo"
+                        placeholder="Escreva os detalhes aqui..."></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" aria-label="Enviar o post">Postar</button>
+            </form>
+        </section>
+
+        <section class="post-feed">
+            <h2>Seu Feed</h2>
+            <article id="post-result" class="hidden">
+                <h3 id="renderizador-titulo"></h3>
+                <p id="renderizador-conteudo"></p>
+            </article>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
